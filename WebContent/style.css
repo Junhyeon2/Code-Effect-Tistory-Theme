@@ -6,33 +6,42 @@ body{
 }
 
 .nav-wrapper{
+	position: fixed;
+	width: 100%;
+	padding: 5px 0 5px 0;
 }
 .nav-left{
-	left: 0;
+	float: left;
 	font-size: 30px;
 	line-height: 30px;
 	height: 30px;
-	position:fixed;
+	display: inline;
     z-index:999;
-    margin-left: 200px;
+    margin-left: 100px;
+    top: 10px;
+}
+.nav-scroll{
+	background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px gray;
 }
 .nav-right{
-	right: 0;
+	float: right;
 	font-family: "BMD";
 	line-height: 50px;
 	height: 30px;
-	vertical-align: middle;
-	position:fixed;
+	display: table-cell;
     z-index:999;
-    margin-right: 200px;
+    margin-right: 100px;
+    top: 10px;
+    vertical-align:middle;
 }
 .nav-right h4{
 	margin: 0;
 	font-size: 20px;
+	height: 30px;
 	line-height: 30px;
 	text-align: center;
 }
-
 .rm-deco{
 	text-decoration: none;
 	color:white;
@@ -47,7 +56,12 @@ body{
 	color: white;
 }
 .rm-deco:hover{
+	text-decoration: none;
 	color: white;
+}
+
+.display-none{
+	display: none;
 }
 
 .article-title{
@@ -76,7 +90,7 @@ body{
 }
 .title-style{
     font-size: 50px;
-    padding: 0 50px 0 50px;
+    padding: 0 100px 0 100px;
     color: white;
     font-family: "BMD";
 }
@@ -88,13 +102,74 @@ body{
 .subtitle-style{
 	position: relative;
     display: inline-block;
-    margin: 0 10% 0 10%;
+    margin: 0 100px 0 100px;
     padding: 7px 10px 7px 10px;
     font-size: 1.0em;
-    box-shadow: 0 0 5px gray;
-    border-radius: 5px;
     text-align: left;
     font-family: "BMD";
-    font-size: 25px;
+    font-size: 20px;
     color: white;
+    line-height: 23px;
+}
+.subtitle-icon-align{
+	text-align: center;
+	vertical-align: middle;
+}
+.subtitle-font-style{
+	font-size: 12px;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+.article-content{
+	padding: 20px 200px 0 200px;
+	white-space:normal;
+	word-break:break-all;
+	font-size: 1.1em;
+	line-height: 30px;
+	font-weight: 600;
+	font-family: 'Noto Sans Korean', sans-serif;
+	word-spacing: 3px;
+	letter-spacing: 0.3px;
+}
+
+/* Animation */
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-900deg);
+    transform: rotate(-900deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 0.3s linear 1;
+  -moz-animation: rotating 0.3s linear 1;
+  -ms-animation: rotating 0.3s linear 1;
+  -o-animation: rotating 0.3s linear 1;
+  animation: rotating 0.3s linear 1;
+  animation-fill-mode: forwards;
 }
