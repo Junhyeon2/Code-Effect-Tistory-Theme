@@ -47,7 +47,7 @@ body{
 	color:white;
 }
 .rm-deco:link{
-	color: white;	
+	color: white;
 }
 .rm-deco:visited{
 	color: white;
@@ -121,7 +121,7 @@ body{
 	vertical-align: middle;
 }
 .article-content{
-	padding: 20px 200px 0 200px;
+	padding: 20px 20% 20px 20%;
 	white-space:normal;
 	word-break:break-all;
 	font-size: 1.1em;
@@ -130,6 +130,15 @@ body{
 	font-family: 'Noto Sans Korean', sans-serif;
 	word-spacing: 3px;
 	letter-spacing: 0.3px;
+}
+.article-other-post{
+	padding: 50px 0 0 0;
+	border: none !important;
+}
+
+.title-article-other-post{
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 /* Animation */
@@ -172,4 +181,68 @@ body{
   -o-animation: rotating 0.3s linear 1;
   animation: rotating 0.3s linear 1;
   animation-fill-mode: forwards;
+}
+
+/* Tistroy Menu bar remove */
+#tistorytoolbarid
+{
+	display:none;
+}
+
+/* category another post */
+div.another_category{
+	margin-top:30px;
+	margin-bottom:10 !important;
+	padding:0;
+	border:0 !important;
+	font-family: 'Noto Sans Korean', sans-serif !important;
+}
+div.another_category h4{
+	margin:0px !important;
+	background:#fff;
+	color:#000000 !important;
+	padding:0 5px 0 0 !important;
+	font-size:1.2em !important;
+	line-height:normal;
+	font-family: "BMD" !important;
+	border: none !important;
+}
+div.another_category h4 a{
+	color:#000000 !important;
+	font-size:1.2em !important;
+	margin:0 !important;
+}
+div.another_category table{
+	border: none !important;
+	margin:0 !important;
+}
+div.another_category table td{
+}
+div.another_category th a{
+	margin-left:12px;
+	color:#424242 !important;
+	padding-left:4px !important;
+	font-size:1.1em !important;
+}
+div.another_category th a.current{
+	border-bottom:0 !important;
+	font-weight: 900 !important;
+}
+div.another_category th span{
+	color:#757575 !important;
+}
+div.another_category th{
+	padding-bottom:0 !important;
+}
+div.another_category table th{
+	padding-top:0 !important;
+}
+div.another_category tr:first-child th{
+	padding-top: 5px !important;
+}
+div.another_category tr:first-child td{
+	padding-top: 5px !important;
+}
+div.another_category table th a:hover{
+	text-decoration:underline !important;
 }
