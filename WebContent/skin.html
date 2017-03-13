@@ -1,82 +1,228 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>[##_title_##]::[##_page_title_##]</title>
-<!-- 부트스트랩 CSS -->
-<link rel="stylesheet" href="./images/bootstrap.min.css">
-<!-- Fontawesome CSS -->
-<link rel="stylesheet" href="./images/font-awesome.min.css">
-<!-- Customize CSS -->
-<link rel="stylesheet" href="./style.css">
-<!-- Noto Sans Font CSS -->
-<link re="stylesheet" href="./images/NotoSansKR-Hestia.css">
-</head>
-<body>
-	<div id="container">
-		<div id="header">
-			<nav id="navWrapper" class="nav-wrapper">
-				<div id="navLeft" class="nav-left">
-					<a class="rm-deco">
-						<i id="iconBars" class="fa fa-bars" aria-hidden="true"></i>
-						<i id="iconArrow" class="fa fa-arrow-down display-none" aria-hidden="true"></i>
-					</a>
-				</div>
-				<div id="navRight" class="nav-right">
-					<h4><a class="rm-deco" href="[##_blog_link_##]">[##_title_##]</a></h4>
-				</div>
-				<div class="nav-slide">
-				</div>
-			</nav>
-		</div> <!-- end of header -->
 
-		<div id="content">
-			<s_article_rep>
-				<div class="entry article-wrapper">
-					<div class="article-title">
-						<div class="title-inner-80">
-							<h3 class="title-align title-style"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h3>
-						</div>
-						<div class="title-inner-20">
-							<div class="subtitle-align">
-								<div class="subtitle-style">
-									<div class="row">
-										<div class="col-md-12">
-											<i class="fa fa-folder subtitle-icon-align"></i>
-											<span class="subtitle-font-style">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>[##_title_##]::[##_page_title_##]</title>
+	<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+	<!-- start of JS for moving other category location -->
+	<script type="text/javascript" language="javascript">
+		var MissFlash_Div_Num = 1;
+		function getElementsByClass(MissFlash_Div_Num, searchClass, node, tag) {
+			// JavaScript function was developed by MissFlash (http://blog.missflash.com)
+			var classElements = new Array();
+			if (node == null) node = document;
+			if (tag == null) tag = '*';
+			var els = node.getElementsByTagName(tag);
+			var elsLen = els.length;
+			var pattern = new RegExp("(^|\\s)" + searchClass + "(\\s|$)");
+			var j = 0;
+			var MissFlash_Check = 1;
+			var MissFlash_ID = "MF_Reference" + MissFlash_Div_Num;
+			for (i = 0; i < elsLen; i++) {
+				if (pattern.test(els[i].className)) {
+					classElements[j] = els[i];
+					j++;
+					if (els[i].id.indexOf("MF_Reference") == -1) {
+						var result = els[i].innerHTML;
+						els[i].style.display = "none";
+					}
+				}
+			}
+			return result;
+		}
+		function showCommentControl(id){
+			var items = id.getElementsByClassName("control");
+			items[0].style.display = "inline-block";
+		}
+		function hideCommentControl(id){
+			var items = id.getElementsByClassName("control");
+			items[0].style.display = "none";
+		}
+	</script>
+	<!-- end of JS for moving other category location -->
+	<!-- 부트스트랩 CSS -->
+	<link rel="stylesheet" href="./images/bootstrap.min.css">
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="./images/font-awesome.min.css">
+	<!-- Customize CSS -->
+	<link rel="stylesheet" href="./style.css">
+	<!-- Noto Sans Font CSS -->
+	<link re="stylesheet" href="./images/NotoSansKR-Hestia.css">
+</head>
+
+<body id="[##_body_id_##]">
+	<s_t3>
+	<div id="container">
+		<header>
+			<div id="header">
+				<nav id="navWrapper" class="nav-wrapper">
+					<div id="navLeft" class="nav-left">
+						<a class="rm-deco">
+							<i id="iconBars" class="fa fa-bars" aria-hidden="true"></i>
+							<i id="iconArrow" class="fa fa-arrow-down display-none" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div id="navRight" class="nav-right">
+						<h4><a class="rm-deco" href="[##_blog_link_##]">[##_title_##]</a></h4>
+					</div>
+					<div class="nav-slide">
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- end of header -->
+
+		<article>
+			<div id="content">
+				<s_article_rep>
+					<div class="article-wrapper">
+						<div class="article-title">
+							<div class="title-inner-80">
+								<h3 class="title-align title-style"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h3>
+							</div>
+							<div class="title-inner-20">
+								<div class="subtitle-align">
+									<div class="subtitle-style">
+										<div class="row">
+											<div class="col-md-12">
+												<i class="fa fa-folder subtitle-icon-align"></i>
+												<span class="subtitle-font-style">
 												<a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
 											</span>
+											</div>
 										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-12">
-											<i class="fa fa-calendar subtitle-icon-align"></i>
-											<span class="subtitle-font-style">[##_article_rep_date_##]</span>
+										<div class="row">
+											<div class="col-md-12">
+												<i class="fa fa-calendar subtitle-icon-align"></i>
+												<span class="subtitle-font-style">[##_article_rep_date_##]</spa>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="article article-content">[##_article_rep_desc_##]</div>
 
-					<div class="article-comments">
+					<div class="article-content">[##_article_rep_desc_##]</div>
+
+					<div class="article-tag">
+						<i class="fa fa-tags" aria-hidden="true"></i>
+						<s_tag_label>[##_tag_label_rep_##]</s_tag_label>
 					</div>
+
+					<s_rp>
+					<div class="article-comments">
+						<s_rp_container>
+							<ol>
+								<s_rp_rep>
+									<li id='[##_rp_rep_id_##]'>
+										<div class="[##_rp_rep_class_##]" style="margin-top: 5dp;">
+											<span class="profile_image"><img src="[##_rp_rep_logo_##]" width="48" height="48" alt="profile image"/></span>
+											<div class="comment_content" onmouseover="showCommentControl([##_rp_rep_id_##])" onmouseout="hideCommentControl([##_rp_rep_id_##])">
+												<span class="name">[##_rp_rep_name_##]</span>
+												<span class="date"> [##_rp_rep_date_##]</span>
+												<span class="control">
+													<a href="[##_rp_rep_link_##]" class="address"><span>댓글주소</span></a>
+													<a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">&nbsp;<span>수정/삭제</span></a>
+													<a href="#" onclick="[##_rp_rep_onclick_reply_##]" class="write">&nbsp;<span>댓글쓰기</span></a>
+												</span>
+												<span class="desc">[##_rp_rep_desc_##]</span>
+											</div>
+										</div>
+										<s_rp2_container>
+											<ul style="padding: 0;">
+												<s_rp2_rep>
+													<li id='[##_rp_rep_id_##]'>
+														<div class="[##_rp_rep_class_##]" style="margin-top: 5dp; padding-left: 20px;">
+															<span class="profile_image"><img src="[##_rp_rep_logo_##]" width="48" height="48" alt="profile image"/></span>
+															<div class="comment_content" onmouseover="showCommentControl([##_rp_rep_id_##])" onmouseout="hideCommentControl([##_rp_rep_id_##])">
+																<span class="name">[##_rp_rep_name_##]</span>
+																<span class="date"> [##_rp_rep_date_##]</span>
+																<span class="control">
+																	<a href="[##_rp_rep_link_##]" class="address"><span>댓글주소</span></a>
+																	<a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">&nbsp;<span>수정/삭제</span></a>
+																</span>
+																<span class="desc">[##_rp_rep_desc_##]</span>
+														</div>
+													</li>
+												</s_rp2_rep>
+											</ul>
+										</s_rp2_container>
+									</li>
+								</s_rp_rep>
+							</ol>
+						</s_rp_container>
+
+						<s_rp_input_form>
+							<div class="comment-write">
+								<s_rp_member>
+									<s_rp_guest>
+										<div style="margin-bottom: 5px;">
+											<div class="comment-guest">
+												<span>
+													<input type="text" name="[##_rp_input_name_##]" value="[##_guest_name_##]" placeholder="이름"/>
+												</span>
+												<span>
+													<input type="password" maxlength="8" name="[##_rp_input_password_##]" value="[##_rp_admin_check_##]" placeholder="패스워드"/>
+												</span>
+											</div>
+										</div>
+									</s_rp_guest>
+								</s_rp_member>
+									<textarea name="[##_rp_input_comment_##]" rows="10" cols="50" placeholder="여러분의 소중한 댓글을 입력해주세요"></textarea>
+								<span class="submit-wrap">
+									<input type="submit" value="댓글 달기" onclick="[##_rp_onclick_submit_##]" style="float: right"/>
+								</span>
+								<span class="secret-wrap">
+									<input type="checkbox" id="secret" name="[##_rp_input_is_secret_##]" class="css-checkbox" />
+									<label for="secret" class="css-label">비밀글</label>
+								</span>
+							</div>
+						</s_rp_input_form>
+					</div>
+					</s_rp>
+
+					<!-- start of JS for show other category -->
+					<div id="MF_Reference" class="another_category another_category_color_gray"></div>
+					<script type="text/javascript">
+						//<![CDATA[
+						// Created by MissFlash(http://blog.missflash.com)
+						var MF_Reference = document.getElementById('MF_Reference');
+						MF_Reference.setAttribute("id", "MF_Reference" + MissFlash_Div_Num);
+						MF_Reference.className = "another_category another_category_color_gray";
+						var ref_source = getElementsByClass(MissFlash_Div_Num, "another_category");
+						MF_Reference.innerHTML = ref_source;
+						MissFlash_Div_Num += 1;
+						//]]>
+					</script>
+					<!-- end of JS for show other category -->
+
 					<div class="article-paging">
 					</div>
 
-				</div>
-			</s_article_rep>
-		</div> <!-- end of content -->
+					</div>
+				</s_article_rep>
+			</div>
 
-		<div id="sidebar"></div> <!-- end of sidebar -->
-		<div id="footer"></div> <!-- end of footer -->
-	</div>
-<!--  제이쿼리 JS -->
-<script src="./images/jquery-3.1.1.min.js"></script>
-<!-- 부트스트랩 JS -->
-<script src="./images/bootstrap.min.js"></script>
-<!--  제이쿼리 JS -->
-<script src="./images/customize.js"></script>
+		</article>
+		<!-- end of content -->
+
+		<div id="sidebar"></div>
+		<!-- end of sidebar -->
+		<footer>
+			<div id="footer"></div>
+		</footer>
+		<!-- end of footer -->
+		</div>
+
+		</s_t3>
+		<!--  제이쿼리 JS -->
+		<script src="./images/jquery-3.1.1.min.js"></script>
+		<!-- 부트스트랩 JS -->
+		<script src="./images/bootstrap.min.js"></script>
+		<!--  custom JS -->
+		<script src="./images/customize.js"></script>
 </body>
+
 </html>

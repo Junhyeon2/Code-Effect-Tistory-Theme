@@ -15,7 +15,7 @@ $(document).ready(function() {
 	});
 	$('#navLeft').hover(
 		function(){
-			
+
 			$('#iconBars').addClass('display-none');
 			$('#iconArrow').removeClass('display-none');
 			$('#iconArrow').addClass('rotating');
@@ -31,5 +31,5 @@ $(document).ready(function() {
 		    }, function(){
 		    	$('#navRight').fadeIn(100);
 		    }
-		);
+	);
 });
