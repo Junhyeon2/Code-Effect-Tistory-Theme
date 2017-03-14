@@ -76,8 +76,8 @@
 
 		<article>
 			<div id="content">
-				<s_article_rep>
-					<div class="article-wrapper">
+				<div class="article-wrapper">
+					<s_article_rep>
 						<div class="article-title">
 							<div class="title-inner-80">
 								<h3 class="title-align title-style"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h3>
@@ -87,122 +87,132 @@
 									<div class="subtitle-style">
 										<div class="row">
 											<div class="col-md-12">
-												<i class="fa fa-folder subtitle-icon-align"></i>
-												<span class="subtitle-font-style">
-												<a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
-											</span>
+												<i class="fa fa-folder subtitle-icon-align">
+													<span class="subtitle-font-style">
+														<a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
+													</span>
+												</i>
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-md-12">
-												<i class="fa fa-calendar subtitle-icon-align"></i>
-												<span class="subtitle-font-style">[##_article_rep_date_##]</spa>
+												<i class="fa fa-calendar subtitle-icon-align">
+													<span class="subtitle-font-style">[##_article_rep_date_##]</span>
+												</i>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="article-content">[##_article_rep_desc_##]</div>
+						<div class="article-content">[##_article_rep_desc_##]</div>
 
-					<div class="article-tag">
-						<i class="fa fa-tags" aria-hidden="true"></i>
-						<s_tag_label>[##_tag_label_rep_##]</s_tag_label>
-					</div>
+						<div class="article-tag">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<s_tag_label>[##_tag_label_rep_##]</s_tag_label>
+						</div>
 
-					<s_rp>
-					<div class="article-comments">
-						<s_rp_container>
-							<ol>
-								<s_rp_rep>
-									<li id='[##_rp_rep_id_##]'>
-										<div class="[##_rp_rep_class_##]" style="margin-top: 5dp;">
-											<span class="profile_image"><img src="[##_rp_rep_logo_##]" width="48" height="48" alt="profile image"/></span>
-											<div class="comment_content" onmouseover="showCommentControl([##_rp_rep_id_##])" onmouseout="hideCommentControl([##_rp_rep_id_##])">
-												<span class="name">[##_rp_rep_name_##]</span>
-												<span class="date"> [##_rp_rep_date_##]</span>
-												<span class="control">
-													<a href="[##_rp_rep_link_##]" class="address"><span>댓글주소</span></a>
-													<a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">&nbsp;<span>수정/삭제</span></a>
-													<a href="#" onclick="[##_rp_rep_onclick_reply_##]" class="write">&nbsp;<span>댓글쓰기</span></a>
-												</span>
-												<span class="desc">[##_rp_rep_desc_##]</span>
+						<s_rp>
+						<div class="article-comments">
+							<s_rp_container>
+								<ol>
+									<s_rp_rep>
+										<li id='[##_rp_rep_id_##]'>
+											<div class="[##_rp_rep_class_##]" style="margin-top: 5dp;">
+												<span class="profile_image"><img src="[##_rp_rep_logo_##]" width="48" height="48" alt="profile image"/></span>
+												<div class="comment_content" onmouseover="showCommentControl([##_rp_rep_id_##])" onmouseout="hideCommentControl([##_rp_rep_id_##])">
+													<span class="name">[##_rp_rep_name_##]</span>
+													<span class="date"> [##_rp_rep_date_##]</span>
+													<span class="control">
+														<a href="[##_rp_rep_link_##]" class="address"><span>댓글주소</span></a>
+														<a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">&nbsp;<span>수정/삭제</span></a>
+														<a href="#" onclick="[##_rp_rep_onclick_reply_##]" class="write">&nbsp;<span>댓글쓰기</span></a>
+													</span>
+													<span class="desc">[##_rp_rep_desc_##]</span>
+												</div>
 											</div>
-										</div>
-										<s_rp2_container>
-											<ul style="padding: 0;">
-												<s_rp2_rep>
-													<li id='[##_rp_rep_id_##]'>
-														<div class="[##_rp_rep_class_##]" style="margin-top: 5dp; padding-left: 20px;">
-															<span class="profile_image"><img src="[##_rp_rep_logo_##]" width="48" height="48" alt="profile image"/></span>
-															<div class="comment_content" onmouseover="showCommentControl([##_rp_rep_id_##])" onmouseout="hideCommentControl([##_rp_rep_id_##])">
-																<span class="name">[##_rp_rep_name_##]</span>
-																<span class="date"> [##_rp_rep_date_##]</span>
-																<span class="control">
-																	<a href="[##_rp_rep_link_##]" class="address"><span>댓글주소</span></a>
-																	<a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">&nbsp;<span>수정/삭제</span></a>
-																</span>
-																<span class="desc">[##_rp_rep_desc_##]</span>
-														</div>
-													</li>
-												</s_rp2_rep>
-											</ul>
-										</s_rp2_container>
-									</li>
-								</s_rp_rep>
-							</ol>
-						</s_rp_container>
+											<s_rp2_container>
+												<ul style="padding: 0;">
+													<s_rp2_rep>
+														<li id='[##_rp_rep_id_##]'>
+															<div class="[##_rp_rep_class_##]" style="margin-top: 5dp; padding-left: 20px;">
+																<span class="profile_image"><img src="[##_rp_rep_logo_##]" width="48" height="48" alt="profile image"/></span>
+																<div class="comment_content" onmouseover="showCommentControl([##_rp_rep_id_##])" onmouseout="hideCommentControl([##_rp_rep_id_##])">
+																	<span class="name">[##_rp_rep_name_##]</span>
+																	<span class="date"> [##_rp_rep_date_##]</span>
+																	<span class="control">
+																		<a href="[##_rp_rep_link_##]" class="address"><span>댓글주소</span></a>
+																		<a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">&nbsp;<span>수정/삭제</span></a>
+																	</span>
+																	<span class="desc">[##_rp_rep_desc_##]</span>
+															</div>
+														</li>
+													</s_rp2_rep>
+												</ul>
+											</s_rp2_container>
+										</li>
+									</s_rp_rep>
+								</ol>
+							</s_rp_container>
 
-						<s_rp_input_form>
-							<div class="comment-write">
-								<s_rp_member>
-									<s_rp_guest>
-										<div style="margin-bottom: 5px;">
-											<div class="comment-guest">
-												<span>
-													<input type="text" name="[##_rp_input_name_##]" value="[##_guest_name_##]" placeholder="이름"/>
-												</span>
-												<span>
-													<input type="password" maxlength="8" name="[##_rp_input_password_##]" value="[##_rp_admin_check_##]" placeholder="패스워드"/>
-												</span>
+							<s_rp_input_form>
+								<div class="comment-write">
+									<s_rp_member>
+										<s_rp_guest>
+											<div style="margin-bottom: 5px;">
+												<div class="comment-guest">
+													<span>
+														<input type="text" name="[##_rp_input_name_##]" value="[##_guest_name_##]" placeholder="이름"/>
+													</span>
+													<span>
+														<input type="password" maxlength="8" name="[##_rp_input_password_##]" value="[##_rp_admin_check_##]" placeholder="패스워드"/>
+													</span>
+												</div>
 											</div>
-										</div>
-									</s_rp_guest>
-								</s_rp_member>
-									<textarea name="[##_rp_input_comment_##]" rows="10" cols="50" placeholder="여러분의 소중한 댓글을 입력해주세요"></textarea>
-								<span class="submit-wrap">
-									<input type="submit" value="댓글 달기" onclick="[##_rp_onclick_submit_##]" style="float: right"/>
-								</span>
-								<span class="secret-wrap">
-									<input type="checkbox" id="secret" name="[##_rp_input_is_secret_##]" class="css-checkbox" />
-									<label for="secret" class="css-label">비밀글</label>
-								</span>
-							</div>
-						</s_rp_input_form>
-					</div>
-					</s_rp>
-
+										</s_rp_guest>
+									</s_rp_member>
+										<textarea name="[##_rp_input_comment_##]" rows="10" cols="50" placeholder="여러분의 소중한 댓글을 입력해주세요"></textarea>
+									<span class="submit-wrap">
+										<input type="submit" value="댓글 달기" onclick="[##_rp_onclick_submit_##]" style="float: right"/>
+									</span>
+									<span class="secret-wrap">
+										<input type="checkbox" id="secret" name="[##_rp_input_is_secret_##]" class="css-checkbox" />
+										<label for="secret" class="css-label">비밀글</label>
+									</span>
+								</div>
+							</s_rp_input_form>
+						</div>
+						</s_rp>
+						</div>
 					<!-- start of JS for show other category -->
-					<div id="MF_Reference" class="another_category another_category_color_gray"></div>
-					<script type="text/javascript">
-						//<![CDATA[
-						// Created by MissFlash(http://blog.missflash.com)
-						var MF_Reference = document.getElementById('MF_Reference');
-						MF_Reference.setAttribute("id", "MF_Reference" + MissFlash_Div_Num);
-						MF_Reference.className = "another_category another_category_color_gray";
-						var ref_source = getElementsByClass(MissFlash_Div_Num, "another_category");
-						MF_Reference.innerHTML = ref_source;
-						MissFlash_Div_Num += 1;
-						//]]>
-					</script>
+						<div id="MF_Reference" class="another_category another_category_color_gray"></div>
+						<script type="text/javascript">
+							//<![CDATA[
+							// Created by MissFlash(http://blog.missflash.com)
+							var MF_Reference = document.getElementById('MF_Reference');
+							MF_Reference.setAttribute("id", "MF_Reference" + MissFlash_Div_Num);
+							MF_Reference.className = "another_category another_category_color_gray";
+							var ref_source = getElementsByClass(MissFlash_Div_Num, "another_category");
+							MF_Reference.innerHTML = ref_source;
+							MissFlash_Div_Num += 1;
+							//]]>
+						</script>
 					<!-- end of JS for show other category -->
-
+					</s_article_rep>
 					<div class="article-paging">
+						<s_paging>
+							<div class="paging">
+								<a [##_prev_page_##] class="[##_no_more_prev_##]"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+								<span class="numbox">
+													<s_paging_rep>
+													<a [##_paging_rep_link_##] class="num">[##_paging_rep_link_num_##]</a>
+													</s_paging_rep>
+													</span>
+								<a [##_next_page_##] class="[##_no_more_next_##]"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+							</div>
+						</s_paging>
 					</div>
-
-					</div>
-				</s_article_rep>
 			</div>
 
 		</article>
